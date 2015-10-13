@@ -14,17 +14,10 @@ section {
 	background-color: #f0f0f0;
   float: left;
   display: block;
-  height: 92%;
+  height: 100%;
   padding: 0;
   margin: 0;
   color: black;
-}
-footer {
-	position: fixed;
-	width: 100%;
-	bottom:0;
-	height: 8%;
-	background-color:red;
 }
 /*hide an elemnt - used for #time-spent h4 & h3*/
 .hidden {
