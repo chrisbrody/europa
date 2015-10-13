@@ -10,11 +10,11 @@ function americaDays() {
 	// days in america
 	setTimeout(function(){
 		$('#test1').toggleClass('hidden').css('visibility', 'visible').shuffleLetters()
-	},1000);
+	},2000);
 	setTimeout(function(){
 		// Shuffle the container with custom text
 		$('#test2').toggleClass('hidden').css('visibility', 'visible').shuffleLetters()		
-	},1900);
+	},2900);
 	europeDays()
 }
 
@@ -25,13 +25,13 @@ function europeDays() {
 			'text': 'DAYS SPENT IN EUROPE: ' 
 		})	
 		$('#test2').toggleClass('hidden')
-	},4500);
+	},5500);
 	setTimeout(function(){
 		$('#test2').toggleClass('hidden')
 		$('#test2').shuffleLetters({
 			'text': '16' 
 		})
-	}, 5400);
+	}, 6400);
 }
 
 // runs in if statement of horizonScroll.js line 113
@@ -106,3 +106,18 @@ function amsterdamDays() {
 	}
 }
 
+
+$( "#london-digs-overlay-menu" ).click(function() {
+	$("#london-digs-overlay-content").addClass('overlay-open');
+});
+$( "#london-digs-overlay-close" ).click(function() {
+  $( "#london-digs-overlay-content" ).removeClass( 'overlay-open' ); 
+});
+
+
+$( "#london-eats-overlay-menu" ).click(function() {
+	$("#london-eats-overlay-content").addClass('overlay-open');
+});
+$( "#london-eats-overlay-close" ).click(function() {
+  $( "#london-eats-overlay-content" ).removeClass( 'overlay-open' ); 
+});

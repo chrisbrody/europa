@@ -7,12 +7,70 @@
 		<link rel="stylesheet" href="css/main.css">
 	</head>
 	<body>
+		<!-- London Digs Modal -->
+		<div class="modal fade" id="london-digs" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">London Digs</h4>
+		      </div>
+		      <div class="modal-body">
+		        <div>
+		        	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+							  <!-- Indicators -->
+							  <ol class="carousel-indicators">
+							    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+							    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+							    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+							  </ol>
 
-		
+							  <!-- Wrapper for slides -->
+							  <div class="carousel-inner" role="listbox">
+							    <div class="item active">
+							      <img src="img/london/digs.jpg" alt="...">
+							      <div class="carousel-caption">
+							        Caption 1
+							      </div>
+							    </div>
+							    <div class="item">
+							      <img src="img/london/digs.jpg" alt="...">
+							      <div class="carousel-caption">
+							        Caption 2
+							      </div>
+							    </div>
+							    <div class="item">
+							      <img src="img/london/digs.jpg" alt="...">
+							      <div class="carousel-caption">
+							        Caption 3
+							      </div>
+							    </div>
+							  </div>
+
+							  <!-- Controls -->
+							  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+							    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							    <span class="sr-only">Previous</span>
+							  </a>
+							  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+							    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							    <span class="sr-only">Next</span>
+							  </a>
+							</div>
+		        </div>
+		        <p>It's been decided that sleeping at the Gatwick airport hotel will be the best choice since the flight to Athens leaves at <code>5:45</code> in the AM...</p>
+		      </div>
+		      <div class="modal-footer">
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<!-- website side controls -->
 		<div class="horizon-prev"><i class="glyphicon glyphicon-chevron-left"></i></div>
 		<div class="horizon-next"><i class="glyphicon glyphicon-chevron-right"></i></div>
 
-		<!-- NYC -->
+		<!-- NYC first page/section-->
 		<section data-role="section" id="section-section1">
 			<div class="container-fluid h-100">
 				<div id="intro-text" class="row">
@@ -30,8 +88,8 @@
 				</div>
 			</div>
 		</section>
-
-		<!-- LONDON ENGLAND -->
+		
+		<!-- LONDON ENGLAND Oct 14 -->
 		<section data-role="section" id="section-section2">
 			<div class="container-fluid h-100">
 				<!-- LONDON CITY TEXT -->
@@ -45,42 +103,43 @@
 					<div class="col-sm-8 col-sm-offset-2">
 					  <div class="col-xs-5 col-xs-offset-1">
 							<div class="view view-tenth">  
-					     <img src="img/bg1.jpg" />  
+					     <img src="img/london/digs.jpg" />  
 					     <div class="mask">  
 						     <h2>DIGS</h2>  
 						     <p></p>
-				         <a href="#" class="info">Learn More</a> 
+				         <a type="button" class="info" data-toggle="modal" data-target="#london-digs">See More</a> 
 					     </div>  
 							</div>  
 					  </div>
+
 						<div class="col-xs-5">
 							<div class="view view-tenth">  
-					     <img src="img/bg1.jpg" />  
+					     <img src="img/london/eats.jpg" />  
 					     <div class="mask">  
 						     <h2>EATS</h2> 
 						     <p></p> 
-				         <a href="#" class="info">Learn More</a> 
+				         <a href="#" type="button" class="info">See More</a> 
 					     </div>  
 							</div>  
 					  </div>
 					  <div class="clearfix"></div>
 						<div class="col-xs-5 col-xs-offset-1">
 							<div class="view view-tenth">  
-					     <img src="img/bg1.jpg" />  
+					     <img src="img/london/culture.jpg" />  
 					     <div class="mask">  
 						     <h2>CULTURE</h2>  
 						     <p></p>  
-				         <a href="#" class="info">Learn More</a> 
+				         <a href="#" class="info">See More</a> 
 					     </div>  
 							</div>  
 					  </div>
 					  <div class="col-xs-5">
 							<div class="view view-tenth">  
-					     <img src="img/bg1.jpg" />  
+					     <img src="img/london/people.jpg" />  
 					     <div class="mask">  
 						     <h2>PEOPLE</h2>  
 						     <p></p>  
-				         <a href="#" class="info">Learn More</a> 
+				         <a href="#" class="info">See More</a> 
 					     </div>  
 							</div>  
 					  </div>
@@ -95,10 +154,10 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div>			
 		</section>
-
-		<!-- ATHENS GREECE -->
+		
+		<!-- ATHENS GREECE Oct 15 - 17 -->
 		<section data-role="section" id="section-section3">
 			<div class="container-fluid h-100">
 				<!-- ATHENS CITY TEXT -->
@@ -112,42 +171,42 @@
 					<div class="col-sm-8 col-sm-offset-2">
 					  <div class="col-xs-5 col-xs-offset-1">
 							<div class="view view-tenth">  
-					     <img src="img/bg1.jpg" />  
+					     <img src="img/athens/digs.jpg" id="athens-digs"/>  
 					     <div class="mask">  
 						     <h2>DIGS</h2>  
 						     <p></p>
-				         <a href="#" class="info">Learn More</a> 
+				         <a href="#" class="info">Coming Soon</a> 
 					     </div>  
 							</div>  
 					  </div>
 						<div class="col-xs-5">
 							<div class="view view-tenth">  
-					     <img src="img/bg1.jpg" />  
+					     <img src="img/athens/eats.png" />  
 					     <div class="mask">  
 						     <h2>EATS</h2> 
 						     <p></p> 
-				         <a href="#" class="info">Learn More</a> 
+				         <a href="#" class="info">Coming Soon</a> 
 					     </div>  
 							</div>  
 					  </div>
 					  <div class="clearfix"></div>
 						<div class="col-xs-5 col-xs-offset-1">
 							<div class="view view-tenth">  
-					     <img src="img/bg1.jpg" />  
+					     <img src="img/athens/culture.jpg" />  
 					     <div class="mask">  
 						     <h2>CULTURE</h2>  
 						     <p></p>  
-				         <a href="#" class="info">Learn More</a> 
+				         <a href="#" class="info">Coming Soon</a> 
 					     </div>  
 							</div>  
 					  </div>
 					  <div class="col-xs-5">
 							<div class="view view-tenth">  
-					     <img src="img/bg1.jpg" />  
+					     <img src="img/athens/people.jpg" />  
 					     <div class="mask">  
 						     <h2>PEOPLE</h2>  
 						     <p></p>  
-				         <a href="#" class="info">Learn More</a> 
+				         <a href="#" class="info">Coming Soon</a> 
 					     </div>  
 							</div>  
 					  </div>
@@ -165,7 +224,7 @@
 			</div>
 		</section>
 
-		<!-- ROME ITALY -->
+		<!-- ROME ITALY Oct 18 - 20 -->
 		<section data-role="section" id="section-section4">
 			<div class="container-fluid h-100">
 				<!-- ROME CITY TEXT -->
@@ -179,42 +238,42 @@
 					<div class="col-sm-8 col-sm-offset-2">
 					  <div class="col-xs-5 col-xs-offset-1">
 							<div class="view view-tenth">  
-					     <img src="img/bg1.jpg" />  
+					     <img src="img/rome/digs.jpg" />  
 					     <div class="mask">  
 						     <h2>DIGS</h2>  
 						     <p></p>
-				         <a href="#" class="info">Learn More</a> 
+				         <a href="#" class="info">Coming Soon</a> 
 					     </div>  
 							</div>  
 					  </div>
 						<div class="col-xs-5">
 							<div class="view view-tenth">  
-					     <img src="img/bg1.jpg" />  
+					     <img src="img/rome/eats.jpg" />  
 					     <div class="mask">  
 						     <h2>EATS</h2> 
 						     <p></p> 
-				         <a href="#" class="info">Learn More</a> 
+				         <a href="#" class="info">Coming Soon</a> 
 					     </div>  
 							</div>  
 					  </div>
 					  <div class="clearfix"></div>
 						<div class="col-xs-5 col-xs-offset-1">
 							<div class="view view-tenth">  
-					     <img src="img/bg1.jpg" />  
+					     <img src="img/rome/culture.jpg" />  
 					     <div class="mask">  
 						     <h2>CULTURE</h2>  
 						     <p></p>  
-				         <a href="#" class="info">Learn More</a> 
+				         <a href="#" class="info">Coming Soon</a> 
 					     </div>  
 							</div>  
 					  </div>
 					  <div class="col-xs-5">
 							<div class="view view-tenth">  
-					     <img src="img/bg1.jpg" />  
+					     <img src="img/rome/people.jpg" />  
 					     <div class="mask">  
 						     <h2>PEOPLE</h2>  
 						     <p></p>  
-				         <a href="#" class="info">Learn More</a> 
+				         <a href="#" class="info">Coming Soon</a> 
 					     </div>  
 							</div>  
 					  </div>
@@ -232,7 +291,7 @@
 			</div>
 		</section>
 
-		<!-- PARIS FRANCE -->
+		<!-- PARIS FRANCE Oct 21 -->
 		<section data-role="section" id="section-section5">
 			<div class="container-fluid h-100">
 				<!-- PARIS CITY TEXT -->
@@ -246,42 +305,42 @@
 					<div class="col-sm-8 col-sm-offset-2">
 					  <div class="col-xs-5 col-xs-offset-1">
 							<div class="view view-tenth">  
-					     <img src="img/bg1.jpg" />  
+					     <img src="img/paris/digs.jpg" />  
 					     <div class="mask">  
 						     <h2>DIGS</h2>  
 						     <p></p>
-				         <a href="#" class="info">Learn More</a> 
+				         <a href="#" class="info">Coming Soon</a> 
 					     </div>  
 							</div>  
 					  </div>
 						<div class="col-xs-5">
 							<div class="view view-tenth">  
-					     <img src="img/bg1.jpg" />  
+					     <img src="img/paris/eats.jpg" />  
 					     <div class="mask">  
 						     <h2>EATS</h2> 
 						     <p></p> 
-				         <a href="#" class="info">Learn More</a> 
+				         <a href="#" class="info">Coming Soon</a> 
 					     </div>  
 							</div>  
 					  </div>
 					  <div class="clearfix"></div>
 						<div class="col-xs-5 col-xs-offset-1">
 							<div class="view view-tenth">  
-					     <img src="img/bg1.jpg" />  
+					     <img src="img/paris/culture.jpg" />  
 					     <div class="mask">  
 						     <h2>CULTURE</h2>  
 						     <p></p>  
-				         <a href="#" class="info">Learn More</a> 
+				         <a href="#" class="info">Coming Soon</a> 
 					     </div>  
 							</div>  
 					  </div>
 					  <div class="col-xs-5">
 							<div class="view view-tenth">  
-					     <img src="img/bg1.jpg" />  
+					     <img src="img/paris/people.jpg" />  
 					     <div class="mask">  
 						     <h2>PEOPLE</h2>  
 						     <p></p>  
-				         <a href="#" class="info">Learn More</a> 
+				         <a href="#" class="info">Coming Soon</a> 
 					     </div>  
 							</div>  
 					  </div>
@@ -299,7 +358,7 @@
 			</div>
 		</section>
 
-		<!-- AMSTERDAM NETHERLANDS -->
+		<!-- AMSTERDAM NETHERLANDS Oct 22 - 29 -->
 		<section data-role="section" id="section-section6">
 			<div class="container-fluid h-100">
 				<!-- AMSTERDAM CITY TEXT -->
@@ -313,42 +372,42 @@
 					<div class="col-sm-8 col-sm-offset-2">
 					  <div class="col-xs-5 col-xs-offset-1">
 							<div class="view view-tenth">  
-					     <img src="img/bg1.jpg" />  
+					     <img src="img/amsterdam/digs.jpg" />  
 					     <div class="mask">  
 						     <h2>DIGS</h2>  
 						     <p></p>
-				         <a href="#" class="info">Learn More</a> 
+				         <a href="#" class="info">Coming Soon</a> 
 					     </div>  
 							</div>  
 					  </div>
 						<div class="col-xs-5">
 							<div class="view view-tenth">  
-					     <img src="img/bg1.jpg" />  
+					     <img src="img/amsterdam/eats.jpg" />  
 					     <div class="mask">  
 						     <h2>EATS</h2> 
 						     <p></p> 
-				         <a href="#" class="info">Learn More</a> 
+				         <a href="#" class="info">Coming Soon</a> 
 					     </div>  
 							</div>  
 					  </div>
 					  <div class="clearfix"></div>
 						<div class="col-xs-5 col-xs-offset-1">
 							<div class="view view-tenth">  
-					     <img src="img/bg1.jpg" />  
+					     <img src="img/amsterdam/culture.jpg" />  
 					     <div class="mask">  
 						     <h2>CULTURE</h2>  
 						     <p></p>  
-				         <a href="#" class="info">Learn More</a> 
+				         <a href="#" class="info">Coming Soon</a> 
 					     </div>  
 							</div>  
 					  </div>
 					  <div class="col-xs-5">
 							<div class="view view-tenth">  
-					     <img src="img/bg1.jpg" />  
+					     <img src="img/amsterdam/people.jpg" />  
 					     <div class="mask">  
 						     <h2>PEOPLE</h2>  
 						     <p></p>  
-				         <a href="#" class="info">Learn More</a> 
+				         <a href="#" class="info">Coming Soon</a> 
 					     </div>  
 							</div>  
 					  </div>
