@@ -121,3 +121,11 @@ $( "#london-eats-overlay-menu" ).click(function() {
 $( "#london-eats-overlay-close" ).click(function() {
   $( "#london-eats-overlay-content" ).removeClass( 'overlay-open' ); 
 });
+
+// Stop carousel from auto cycling
+$(document).ready(function() {      
+	$('#carousel-example-generic1, #carousel-example-generic2, #carousel-example-generic3, #carousel-example-generic4').carousel({
+		pause: true,
+		interval: false
+	});
+});
